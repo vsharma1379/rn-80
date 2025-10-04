@@ -13,10 +13,13 @@ if (typeof AbortSignal !== 'undefined' && !AbortSignal.prototype.throwIfAborted)
 
 
 const { getDefaultConfig, mergeConfig } = require('@react-native/metro-config');
-//const { withNativeWind } = require("nativewind/metro");
+const { withNativeWind } = require("nativewind/metro");
+
+
 
 const defaultConfig = getDefaultConfig(__dirname);
 const { assetExts, sourceExts } = defaultConfig.resolver;
+
 
 
 
@@ -42,6 +45,5 @@ const config = {
 
 const mergedConfig = mergeConfig(defaultConfig, config);
 
-//module.exports = withNativeWind(mergedConfig, { input: "./global.css" });
+module.exports = withNativeWind(mergedConfig, { input: "./global.css" });
 
-module.exports = mergedConfig

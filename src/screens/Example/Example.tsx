@@ -77,7 +77,7 @@ function Example() {
 
     const appsFlyerId = await getAppsFlyerUID();
 
-    Alert.alert(clsx('foo', true && 'bar', 'baz'));
+    //Alert.alert(clsx('foo', true && 'bar', 'baz'));
 
     Clarity.initialize('j9v42rtxxx', {
       /* logLevel: Clarity.LogLevel.Verbose, */
@@ -136,9 +136,9 @@ function Example() {
               {process.env.API_URL}
             </Text>
 
-            <View className="flex-1 items-center justify-center bg-gray-500">
-              <Text className="text-xl font-bold text-green-700">
-                Welcome to Nativewind!
+            <View className="flex-1 items-center justify-center bg-red-500">
+              <Text className="text-xl font-bold text-blue-700">
+                Welcome to Nativewind vivek!
               </Text>
             </View>
             <Text style={[fonts.size_16, fonts.red500]}>
@@ -161,7 +161,7 @@ function Example() {
                     PermissionsAndroid.PERMISSIONS.READ_MEDIA_IMAGES,
                   );
                 } else {
-                  Alert.alert(Platform.Version.toString());
+                  // Alert.alert(Platform.Version.toString());
                   granted = await PermissionsAndroid.request(
                     PermissionsAndroid.PERMISSIONS.READ_EXTERNAL_STORAGE,
                   );

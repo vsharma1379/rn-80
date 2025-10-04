@@ -1,5 +1,5 @@
-/** @type {import('ts-jest').JestConfigWithTsJest} */
 module.exports = {
+  presets: ['module:@react-native/babel-preset', 'nativewind/babel',],
   plugins: [
     [
       'module-resolver',
@@ -14,8 +14,7 @@ module.exports = {
     ['module:react-native-dotenv'],
     'inline-dotenv',
     '@babel/plugin-transform-export-namespace-from',
-    'react-native-worklets/plugin', 
-    'nativewind/babel'// need to be the last plugin
+    'react-native-worklets/plugin',
+    // needs to be the last plugin
   ],
-  presets: ['module:@react-native/babel-preset'],
 };
