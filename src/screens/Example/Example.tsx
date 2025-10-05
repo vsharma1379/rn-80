@@ -172,8 +172,12 @@ function Example() {
                 } else {
                   Alert.alert(granted.toString());
                 }
-                await GoogleSignin.hasPlayServices();
-                await GoogleSignin.signIn();
+                try {
+                  await GoogleSignin.hasPlayServices();
+                  await GoogleSignin.signIn();
+                } catch (error) {
+                  Alert.alert(JSON.stringify(error));
+                }
               }}
               testID="change-btn"
               title="button"
