@@ -136,8 +136,8 @@ function Example() {
               {process.env.API_URL}
             </Text>
 
-            <View className="flex-1 items-center justify-center bg-red-500">
-              <Text className="text-xl font-bold text-blue-700">
+            <View className="flex-1 items-center justify-center bg-primary">
+              <Text className="text-xl text-blue-700 font-pn-700">
                 Welcome to Nativewind vivek!
               </Text>
             </View>
