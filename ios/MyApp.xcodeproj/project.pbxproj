@@ -17,6 +17,8 @@
 		F571B3882BD7A3F80014213C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = F571B3872BD7A3F80014213C /* PrivacyInfo.xcprivacy */; };
 		F5DC7AB12D9D8A92004DB744 /* AppDelegade.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DC7AB02D9D8A92004DB744 /* AppDelegade.swift */; };
 		F80E3D0A45134054815403B8 /* Figtree-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DAE8086807B4DD68AB6D8BD /* Figtree-Regular.ttf */; };
+		EFC9686FB6EA4F16B2EF6E37 /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CBEBA4D1454B9C90B2B32A /* BootSplash.storyboard */; };
+		300C460AA97441E29FCEC232 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC834FA85634BE1B8EABDE9 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		F571B3872BD7A3F80014213C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		F5DC7AB02D9D8A92004DB744 /* AppDelegade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegade.swift; sourceTree = "<group>"; };
 		F5DC7AB22D9D8AA1004DB744 /* MyApp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		95CBEBA4D1454B9C90B2B32A /* BootSplash.storyboard */ = {isa = PBXFileReference; name = "BootSplash.storyboard"; path = "MyApp/BootSplash.storyboard"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1BC834FA85634BE1B8EABDE9 /* Colors.xcassets */ = {isa = PBXFileReference; name = "Colors.xcassets"; path = "MyApp/Colors.xcassets"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = folder.assetcatalog; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				F5DC7AB22D9D8AA1004DB744 /* MyApp-Bridging-Header.h */,
 				97849D992E92919600792A4D /* GoogleService-Info.plist */,
+				95CBEBA4D1454B9C90B2B32A /* BootSplash.storyboard */,
+				1BC834FA85634BE1B8EABDE9 /* Colors.xcassets */,
 			);
 			name = MyApp;
 			sourceTree = "<group>";
@@ -244,6 +250,8 @@
 				6AD1B9606637487F924CF101 /* Figtree-Medium.ttf in Resources */,
 				F80E3D0A45134054815403B8 /* Figtree-Regular.ttf in Resources */,
 				DA85CECCC3C3447AA8598F27 /* Figtree-SemiBold.ttf in Resources */,
+				EFC9686FB6EA4F16B2EF6E37 /* BootSplash.storyboard in Resources */,
+				300C460AA97441E29FCEC232 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

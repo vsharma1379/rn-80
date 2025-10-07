@@ -6,10 +6,11 @@ import { MMKV } from 'react-native-mmkv';
 import { PERMISSIONS, requestMultiple } from 'react-native-permissions';
 import Toast from 'react-native-toast-message';
 import { useEffect } from 'react';
-import { Platform } from 'react-native';
+import { Alert, Platform } from 'react-native';
 
 import ApplicationNavigator from '@/navigation/Application';
 import { ThemeProvider } from '@/theme';
+import BootSplash from 'react-native-bootsplash';
 import '@/translations';
 //import { verifyInstallation } from 'nativewind';
 
@@ -29,6 +30,7 @@ export const queryClient = new QueryClient({
 export const storage = new MMKV();
 
 function App() {
+  //BootSplash.isVisible().then((value) => Alert.alert(value.toString()));
   //verifyInstallation();
   useEffect(() => {
     Toast.show({
