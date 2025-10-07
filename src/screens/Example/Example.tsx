@@ -26,6 +26,7 @@ import SpInAppUpdates, {
   IAUUpdateKind,
   StartUpdateOptions,
 } from 'sp-react-native-in-app-updates';
+import { API_URL } from '@env';
 import appsFlyer from 'react-native-appsflyer';
 import Modal from 'react-native-modal';
 import * as Clarity from '@microsoft/react-native-clarity';
@@ -34,6 +35,7 @@ import clsx from 'clsx';
 const MAX_RANDOM_ID = 9;
 
 function Example() {
+  console.log('API_URL', API_URL);
   const { t } = useTranslation();
   const { useFetchOneQuery } = useUser();
   const { toggleLanguage } = useI18n();
@@ -132,9 +134,7 @@ function Example() {
               style={{ flex: 1 }}
               source={{ uri: 'https://www.google.com' }}
             />
-            <Text style={[fonts.size_16, fonts.red500]}>
-              {process.env.API_URL}
-            </Text>
+            <Text style={[fonts.size_16, fonts.red500]}>vivek {API_URL}</Text>
 
             <View className="flex-1 items-center justify-center bg-primary">
               <Text className="text-xl text-blue-700 font-pn-700">

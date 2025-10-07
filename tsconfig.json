@@ -6,6 +6,7 @@
       "jest",
       "node"
     ],
+    "typeRoots": ["src/types"],
     "paths": {
       "@/*": [
         "./src/*"
