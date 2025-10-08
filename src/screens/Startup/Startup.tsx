@@ -1,16 +1,16 @@
-import type { RootScreenProps } from '@/navigation/types';
+import type { RootScreenProps } from "@/navigation/types";
 
-import { useQuery } from '@tanstack/react-query';
-import { useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import { ActivityIndicator, Text, View } from 'react-native';
+import { useQuery } from "@tanstack/react-query";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { ActivityIndicator, Text, View } from "react-native";
 
-import { Paths } from '@/navigation/paths';
-import { useTheme } from '@/theme';
+import { Paths } from "@/navigation/paths";
+import { useTheme } from "@/theme";
 
-import { AssetByVariant } from '@/components/atoms';
-import { SafeScreen } from '@/components/templates';
-import WebView from 'react-native-webview';
+import { AssetByVariant } from "@/components/atoms";
+import { SafeScreen } from "@/components/templates";
+import WebView from "react-native-webview";
 
 function Startup({ navigation }: RootScreenProps<Paths.Startup>) {
   const { fonts, gutters, layout } = useTheme();
@@ -20,7 +20,7 @@ function Startup({ navigation }: RootScreenProps<Paths.Startup>) {
     queryFn: () => {
       return Promise.resolve(true);
     },
-    queryKey: ['startup'],
+    queryKey: ["startup"],
   });
 
   useEffect(() => {
@@ -51,7 +51,7 @@ function Startup({ navigation }: RootScreenProps<Paths.Startup>) {
           <ActivityIndicator size="large" style={[gutters.marginVertical_24]} />
         ) : undefined}
         {isError ? (
-          <Text style={[fonts.size_16, fonts.red500]}>{t('common_error')}</Text>
+          <Text style={[fonts.size_16, fonts.red500]}>{t("common_error")}</Text>
         ) : undefined}
       </View>
     </SafeScreen>
